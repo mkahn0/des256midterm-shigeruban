@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    background-image: url("../img/centre-pompidou-metz.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:rgb(33, 17, 108)
+}
+header, #head2 {
+    font-family: Limelight, sans-serif;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgb(33, 17, 108);
+}
+
+#head2 {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: rgb(255, 252, 242);
+    box-shadow: 0px 10px 10px rgba(33, 17, 108, 0.5);
+}
+
+header nav, #head2 nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(33, 17, 108);
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: rgb(33, 17, 108);
+    color: rgb(255, 252, 242);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#head2 nav {
+    background-color: rgb(255, 252, 242);
+}
+
+#head2 nav a {
+    background-color: rgb(255, 252, 242);
+    color: rgb(33, 17, 108);
+    text-decoration: none;
+}
+
+#head2 nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+    width: 35%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(33, 17, 108, 0.5);   
+    padding-top: 10%;
+    padding-bottom: 10%; 
+}
+
+footer p, footer li, footer li a{
+    color: rgb(255, 252, 242);
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 1;
+}
+
+footer p {
+    width: 100%;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+    padding-bottom: 0.5em;
+
+}
+
+.sections {
+    padding-top: 10em;
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: rgb(255, 252, 242);
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-family: Limelight, sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+#hero {
+    height: 95vh;
+    color:rgb(255, 252, 242);
+    background-color: rgba(33, 17, 108, 0.5);
+    font-family: Limelight, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3em;
+}
+
+#References {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    gap: 10em;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+
+#References #sources, #References #img-credits {
+    width: 30%;
+}
+
+#References #sources p, #References #img-credits p {
+    margin-top: 2.5em;
+    padding-bottom: 0;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+}
+
+#References ul li {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#References ul li:hover {
+    background-color: rgb(255, 252, 242);
+    border-radius: 5px;
+}
+
+#References ul li a:hover {
+    color:rgb(33, 17, 108);
+}
+
+#personalreflection:hover  {
+    color:rgb(33, 17, 108);
+    background-color: rgb(255, 252, 242);
+    border-radius: 5px;
+}
+
+#about, #design-innovation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5em;
+}
+
+#about .text, #design-innovation .text, #impact p {
+    width: 50%;
+}
+
+#impact p {
+    padding-bottom: 10em;
+}
+
+#about .text p, #design-innovation .text p{
+    width: 100%;
+}
+
+#about .img, #design-innovation .img {
+    width: 50%;
+    height: auto;
+}
+
+#about .img img, #design-innovation .img img {
+    width: 100%;
+}
+
+h3 {
+    font-family: Limelight, sans-serif;
+    font-size: 1.5em;
+}
+
+#projlist div {
+    padding-bottom: 3em;
+}
+
+#projlist div p {
+    padding-bottom: 2em;
+}
+
+#pps-examples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+#pps-examples div {
+    width: 30%;
+}
+
+#pps-examples div img {
+    width: 100%;
+    height: auto;
+}
+
+#pps-examples div p {
+    width: 100%;
+}
+
+#loghouse, #cathedral {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5em;
+    margin-bottom: 3em;
+}
+
+#cathedral {
+    margin-bottom: 0;
+}
+
+#loghouse img, #cathedral img {
+    width: 30%;
+}
+
+#loghouse div, #cathedral div{
+    width: 30%;
+}
+
+#loghouse div p, #cathedral div p {
+    width: 100%;
+}
+
+#ppsdescription {
+    width: 30%;
+}
+
+#personalreflection {
+    text-decoration: none;
+    color:rgb(255, 252, 242);
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+
+
+
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media (max-width: 1024px) {
+    p {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .sections {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #about, #design-innovation, #loghouse, #cathedral, #pps-examples, #References {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #loghouse img, #cathedral img, #pps-examples div {
+        width: 100%;
+    }
+
+    #loghouse div, #cathedral div {
+        width: 100%;
+    }
+
+    #ppsdescription {
+        width: 100%;
+    }
+
+    #References #sources, #References #img-credits {
+        width: 100%;
+    }
+
+    header nav, #head2 nav {
+        flex-direction: column;
+        gap: 0.25em;
+    }
+
+    header nav a, #head2 nav a {
+        padding: 0.25em 0;
+    }
+
+    #hero {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    header nav h1 a {
+        font-size: 1.5em;
+    }
+
+    #hero {
+        font-size: 1.5em;
+    }
+
+    footer p, footer li, footer li a {
+        font-size: 0.9em;
+    }
+}
